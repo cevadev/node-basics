@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-electron": "electron ./clase-automatizacion/electron",
+    "start": "gulp",
+    "build": "gulp build",
+    "serve": "gulp serve"
   },
   "repository": {
     "type": "git",
@@ -19,8 +23,11 @@
   "homepage": "https://github.com/cevadev/node-basics#readme",
   "dependencies": {
     "bcrypt": "5.0.0",
+    "gulp": "4.0.2",
+    "gulp-server-livereload": "1.9.2",
     "is-odd": "3.0.1",
     "moment": "2.29.1",
+    "puppeteer": "5.4.1",
     "sharp": "^0.26.2"
   }
 }
